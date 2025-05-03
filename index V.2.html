@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYBER SECURITY Mentor</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #1a252f;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        nav {
+            background-color: var(--secondary);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        section {
+            padding: 3rem 0;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        section h2 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-size: 2rem;
+        }
+        
+        .topic-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .topic-card h3 {
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+        
+        .roadmap {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .roadmap-step {
+            background-color: white;
+            border-left: 4px solid var(--secondary);
+            padding: 1.5rem;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        
+        .roadmap-step h3 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .roadmap-step::before {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: var(--secondary);
+            border-radius: 50%;
+            left: -12px;
+            top: 24px;
+            border: 3px solid white;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .skill-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .skill-card h3 {
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 5px 0;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>CYBER SECURITY Mentor</h1>
+            <p>Your guide to becoming a cybersecurity expert</p>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#what-is">What is Cybersecurity</a></li>
+            <li><a href="#importance">Global Importance</a></li>
+            <li><a href="#effectiveness">Effectiveness</a></li>
+            <li><a href="#roadmap">Roadmap</a></li>
+            <li><a href="#skills">Required Skills</a></li>
+        </ul>
+    </nav>
+    
+    <main class="container">
+        <section id="what-is">
+            <h2>What is Cyber Security?</h2>
+            <div class="topic-card">
+                <p>Cybersecurity refers to the practice of protecting systems, networks, and programs from digital attacks. These cyberattacks are usually aimed at accessing, changing, or destroying sensitive information; extorting money from users; or interrupting normal business processes.</p>
+                
+                <h3>Key Components:</h3>
+                <ul>
+                    <li><strong>Information Security:</strong> Protecting information from unauthorized access</li>
+                    <li><strong>Network Security:</strong> Securing computer networks from intruders</li>
+                    <li><strong>Application Security:</strong> Keeping software and devices free of threats</li>
+                    <li><strong>Operational Security:</strong> Processes for handling and protecting data assets</li>
+                    <li><strong>Disaster Recovery:</strong> Planning for response to security breaches</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="importance">
+            <h2>Why Cybersecurity is Important Globally</h2>
+            <div class="topic-card">
+                <p>In our interconnected digital world, cybersecurity has become a critical concern for individuals, businesses, and governments alike. The global importance of cybersecurity continues to grow as our reliance on technology increases.</p>
+                
+                <h3>Global Impacts:</h3>
+                <ul>
+                    <li><strong>Economic Protection:</strong> Cybercrime costs the global economy billions annually</li>
+                    <li><strong>National Security:</strong> Governments must protect sensitive data and infrastructure</li>
+                    <li><strong>Privacy Preservation:</strong> Personal data protection is a fundamental right</li>
+                    <li><strong>Business Continuity:</strong> Companies need to protect their operations and reputation</li>
+                    <li><strong>Global Cooperation:</strong> Cyber threats often cross international borders</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="effectiveness">
+            <h2>Effectiveness of Cyber Security</h2>
+            <div class="topic-card">
+                <p>Effective cybersecurity requires a multi-layered approach that addresses people, processes, and technology. When implemented properly, cybersecurity measures can significantly reduce risk and mitigate potential damage from cyber threats.</p>
+                
+                <h3>Measures of Effectiveness:</h3>
+                <ul>
+                    <li><strong>Threat Prevention:</strong> Stopping attacks before they occur</li>
+                    <li><strong>Early Detection:</strong> Identifying breaches quickly to minimize damage</li>
+                    <li><strong>Incident Response:</strong> Effective procedures for handling breaches</li>
+                    <li><strong>Recovery Time:</strong> How quickly normal operations can resume</li>
+                    <li><strong>Compliance:</strong> Meeting regulatory requirements and standards</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="roadmap">
+            <h2>Roadmap to Becoming a Cybersecurity Expert</h2>
+            <div class="topic-card">
+                <div class="roadmap">
+                    <div class="roadmap-step">
+                        <h3>1. Foundation Knowledge</h3>
+                        <p>Learn basic IT concepts, networking fundamentals, and operating systems. Understand how computers and networks function at a fundamental level.</p>
+                    </div>
+                    
+                    <div class="roadmap-step">
+                        <h3>2. Security Fundamentals</h3>
+                        <p>Study core security concepts like CIA triad (Confidentiality, Integrity, Availability), risk management, and security policies.</p>
+                    </div>
+                    
+                    <div class="roadmap-step">
+                        <h3>3. Technical Skills Development</h3>
+                        <p>Gain hands-on experience with security tools, programming (Python, Bash), and system administration.</p>
+                    </div>
+                    
+                    <div class="roadmap-step">
+                        <h3>4. Specialization</h3>
+                        <p>Choose a cybersecurity path: penetration testing, security analysis, forensics, security engineering, etc.</p>
+                    </div>
+                    
+                    <div class="roadmap-step">
+                        <h3>5. Certifications</h3>
+                        <p>Obtain relevant certifications like CompTIA Security+, CEH, CISSP, or OSCP depending on your specialization.</p>
+                    </div>
+                    
+                    <div class="roadmap-step">
+                        <h3>6. Practical Experience</h3>
+                        <p>Work on real-world projects, participate in CTF competitions, and contribute to open-source security projects.</p>
+                    </div>
+                    
+                    <div class="roadmap-step">
+                        <h3>7. Continuous Learning</h3>
+                        <p>Stay updated with the latest threats, vulnerabilities, and security technologies through ongoing education.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="skills">
+            <h2>Skills Required to Become a Cybersecurity Expert</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li>Networking concepts (TCP/IP, DNS, HTTP, etc.)</li>
+                        <li>Operating system knowledge (Windows, Linux)</li>
+                        <li>Programming (Python, Bash, PowerShell)</li>
+                        <li>Security tools (Wireshark, Metasploit, Nmap)</li>
+                        <li>Cloud security concepts</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-card">
+                    <h3>Analytical Skills</h3>
+                    <ul>
+                        <li>Risk assessment and management</li>
+                        <li>Threat modeling</li>
+                        <li>Vulnerability analysis</li>
+                        <li>Incident investigation</li>
+                        <li>Problem-solving abilities</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-card">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Communication (technical and non-technical)</li>
+                        <li>Team collaboration</li>
+                        <li>Ethical judgment</li>
+                        <li>Continuous learning mindset</li>
+                        <li>Attention to detail</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 CYBER SECURITY Mentor. All rights reserved.</p>
+            <p>Empowering the next generation of cybersecurity professionals.</p>
+        </div>
+    </footer>
+</body>
+</html>
